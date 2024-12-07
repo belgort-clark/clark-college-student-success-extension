@@ -22,15 +22,17 @@
 
         <main class="modal-content">
                 <p>The resources listed here can help you navigate to the most common places on websites you may need at Clark.</p>
+                <div id="messages">
+                </div>
                 <h2>Popular Links</h2>
                 <ul>
                         <li><a href="https://www.clark.edu/about/governance/calendars/" target="_blank">Calendars</a></li>
                         <li><a href="https://ptprd.ctclink.us/psp/ptprd/?cmd=login&languageCd=ENG&" target="_blank">ctcLink - Enrollment Management System</a></li>
                         <li><a href="https://www.clark.edu/campus-life/student-support/counseling/index.php" target="_blank">Free Counseling &amp;
                                         Health</a></li>
-                        <li><a href="https://www.clark.edu/campus-life/student-support/disability_support/mydss.php" title="DSS Student Portal" target="_blank">myDSS (Student Portal)</a></li>
+                        <li><a href="https://www.clark.edu/dac/" title="DSS Student Portal" target="_blank">Disability Access Center</a></li>
                         <li><a href="https://www.clark.edu/penguin-digest/index.php" target="_blank">Penguin Digest</a></li>
-                        <li><a href="https://www.clark.edu/campus-life/student-support/diversity-and-equity/success-coaches/index.php" target="_blank">Student Success Coaching</a>
+                        <li><a href="https://www.clark.edu/campus-life/student-support/success-coaches/" target="_blank">Student Success Coaching</a>
                         </li>
                         <li><a href="https://www.clark.edu/campus-life/student-support/student-success/success_workshops.php" target="_blank">Student Success Workshops</a>
                         </li>
@@ -41,8 +43,6 @@
                 <ul>
                         <li><a href="https://www.clark.edu/canvas/" target="_blank">Canvas
                                         Learning Management System</a></li>
-                        <li><a href="https://www.clark.edu/campus-life/student-support/disability_support/index.php" target="_blank">Disability Support
-                                        Services</a>
                         <li><a href="https://www.clark.edu/campus-life/student-support/tutoring/index.php" target="_blank">In-Person Tutoring
                                         Services</a></li>
                         <li><a href="https://library.clark.edu/" target="_blank">Library</a></li>
@@ -70,9 +70,13 @@
                                         Services (WES)</a>
                         </li>
                 </ul>
+                <h2>Search the Website</h2>
+                <label for="search">Enter text to search for on the Clark College website</label><br>
+                <input type="text" name="search" id="searchTerm" size="56"><br>
+                <button id="search">Search</button>
         </main>
         <footer>
-                <p>Developed by <a href="https://www.linkedin.com/in/bruceelgort/">Bruce Elgort</a> and Heather Leasure<br>Clark College 🐧<br>Version 1.1.4 - November 21, 2024
+                <p>Developed by <a href="https://www.linkedin.com/in/bruceelgort/">Bruce Elgort</a> and Heather Leasure<br>Clark College 🐧<br>Version 1.2.0 - December 6, 2024
                 </p>
         </footer>
         <script src="popup.js"></script>

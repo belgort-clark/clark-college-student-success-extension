@@ -20,7 +20,7 @@ fetch(apiUrl)
         return response.json(); // Parse JSON data
     })
     .then(data => {
-        if (data.message.length > 0) {
+        if (data.message.trim().length > 0) {
             messages.innerHTML = data.message;
             messages.style.display = 'block';
         }

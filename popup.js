@@ -20,9 +20,10 @@ fetch(apiUrl)
         return response.json(); // Parse JSON data
     })
     .then(data => {
-        messages.innerHTML = data.message;
-        messages.style.display = 'block';
-        console.log(data); // Handle the data
+        if (data.message.length > 0) {
+            messages.innerHTML = data.message;
+            messages.style.display = 'block';
+        }
     })
     .catch(error => {
         console.error('There was an error with the fetch operation:', error);

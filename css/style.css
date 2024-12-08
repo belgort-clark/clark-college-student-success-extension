@@ -106,5 +106,8 @@ button:hover {
 }
 
 #messages {
-    /* display: none; */
+    display: none;
+    border: 1px solid #dadada;
+    padding: 5px;
+    border-radius: 6px;
 }

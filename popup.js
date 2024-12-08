@@ -1,7 +1,7 @@
 const search = document.querySelector("#search");
 let searchTerm = document.querySelector("#searchTerm");
 const messages = document.querySelector("#messages");
-const apiUrl = "https://ctec.clark.edu/~belgort/browser_extensions/messages/messages.json";
+const apiUrl = "https://raw.githubusercontent.com/belgort-clark/clark-college-student-success-extension/refs/heads/main/messages.json";
 
 search.addEventListener("click", (e) => {
     e.preventDefault();
@@ -20,6 +20,8 @@ fetch(apiUrl)
         return response.json(); // Parse JSON data
     })
     .then(data => {
+        messages.innerHTML = data.message;
+        messages.style.display = 'block';
         console.log(data); // Handle the data
     })
     .catch(error => {

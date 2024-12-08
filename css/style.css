@@ -102,7 +102,7 @@ button {
 }
 
 button:hover {
-    filter: drop
+    filter: drop;
 }
 
 #messages {
@@ -110,4 +110,5 @@ button:hover {
     border: 1px solid #dadada;
     padding: 5px;
     border-radius: 6px;
+    filter: drop;
 }
